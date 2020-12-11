@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>newtab</title>
+
+  <style>
+    html {
+      align-items: center;
+      background-color: #2E3440;
+      color: #D8DEE9;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #2E3440;
+      color: #D8DEE9;
+      display: flex;
+      flex-direction: column;
+      min-height: 30ch;
+      min-width: 50vw;
+      padding: 2em;
+      font: 12px/1 "Fira Code", monospace;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p span {
+      color: #A3BE8C;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      column-gap: 2em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 1em 0;
+    }
+
+    ul:nth-child(1n) li:first-child {
+      color: #BF616A;
+    }
+
+    ul:nth-child(2n) li:first-child {
+      color: #88C0D0;
+    }
+    
+    ul:nth-child(3n) li:first-child {
+      color: #EBCB8B;
+    }
+    
+    ul:nth-child(4n) li:first-child {
+      color: #B48EAD;
+    }
+
+    ul:nth-child(5n) li:first-child {
+      color: #85678f;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      margin: 0 0 1em;
+    }
+
+    p #cursor {
+      background-color: #81A1C1;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <p><span>henry@ares ~ % </span>newtab</p>
+
+  <nav>
+    <ul>
+      <li>gen</li>
+      <li><a href="https://mail.superhuman.com/">email</a></li>
+      <li><a href="https://calendar.google.com/">cal</a></li>
+      <li><a href="https://roamresearch.com/#/app">roam</a></li>
+    </ul>
+
+    <ul>
+      <li>edu</li>
+      <li><a href="https://my.usc.edu/">usc</a></li>
+      <li><a href="https://piazza.com/class">piazza</a></li>
+    </ul>
+
+    <ul>
+      <li>social</li>
+      <li><a href="https://www.reddit.com/">reddit</a></li>
+      <li><a href="https://www.instagram.com/">ig</a></li>
+      <li><a href="https://twitter.com/">twitter</a></li>
+    </ul>
+
+    <ul>
+      <li>gentoo</li>
+      <li><a href="https://packages.gentoo.org/">packages</a></li>
+      <li><a href="https://wiki.gentoo.org/wiki/Main_Page">wiki</a></li>
+      <li><a href="https://wiki.archlinux.org/">arch</a></li>
+    </ul>
+  </nav>
+
+  <p><span>henry@ares ~ % </span> <span id="cursor">_</span></p>
+</body>
+</html>
